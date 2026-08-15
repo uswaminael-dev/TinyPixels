@@ -25,3 +25,6 @@ TinyPixels/
 │── style.css
 │── app.js
 │── README.md
+
+## TRy it here
+https://tiny-pixels-amber.vercel.app/
