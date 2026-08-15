@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pixel Art Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tiny Pixels 🎨</h1>
+
+  <div class="toolbar">
+    <input type="color" id="customColor" value="#000000">
+    <button class="button" id="pen">Pen</button>
+    <button class="button" id="erase">Erase</button>
+    <button class="button" id="fill">Fill</button>
+    <button class="button" id="line">Line</button>
+    <button class="button" id="mirror">Mirror</button>
+    <button class="button" id="clear">Clear</button>
+    <button class="button" id="undo">Undo</button>
+    <button class="button" id="redo">Redo</button>
+    <button class="button" id="download">Download PNG</button>
+    <button class="button" id="saveJSON">Save JSON</button>
+
+    <input type="file" id="loadJSON" accept=".json">
+    <select id="gridSize">
+      <option value="16">16×16</option>
+      <option value="32" selected>32×32</option>
+      <option value="64">64×64</option>
+    </select>
+
+    <button class="button" id="themeToggle">Toggle Theme</button>
+
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <div class="gallery">
+    <h2>Presets</h2>
+    <div class="preset-thumbs">
+      <canvas class="preset" data-preset="flower"></canvas>
+      <canvas class="preset" data-preset="heart"></canvas>
+      <canvas class="preset" data-preset="star"></canvas>
+      <canvas class="preset" data-preset="landscape"></canvas>
+      <canvas class="preset" data-preset="smiley"></canvas>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
