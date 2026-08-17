@@ -12,6 +12,9 @@ const downloadBtn = document.getElementById("download");
 const saveJSONBtn = document.getElementById("saveJSON");
 const loadJSONInput = document.getElementById("loadJSON");
 const gridSizeSelect = document.getElementById("gridSize");
+const customGridSizeInput = document.getElementById('customGridSize');
+const applyCustomSizeBtn = document.getElementById('applyCustomSize');
+
 
 let currentColor = "#000000";
 let tool = "pen";
@@ -336,6 +339,17 @@ loadJSONInput.addEventListener("change", (e) => {
 gridSizeSelect.addEventListener("change", () => {
   size = parseInt(gridSizeSelect.value);
   buildGrid(size);
+});
+
+// New custom size listener
+applyCustomSizeBtn.addEventListener('click', () => {
+  const customSize = parseInt(customGridSizeInput.value);
+  if (!isNaN(customSize) && customSize >= 4 && customSize <= 128) {
+    size = customSize;
+    buildGrid(size);
+  } else {
+    alert("Please enter a size between 4 and 128.");
+  }
 });
 
 // Keyboard shortcuts

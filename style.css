@@ -129,3 +129,11 @@ body.dark h1 {
   color: #ffcc00; /* golden yellow for dark mode */
 }
 
+#customGridSize {
+  width: 80px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+

@@ -20,15 +20,22 @@
     <button class="button" id="redo">Redo</button>
     <button class="button" id="download">Download PNG</button>
     <button class="button" id="saveJSON">Save JSON</button>
-
     <input type="file" id="loadJSON" accept=".json">
+
+    
     <select id="gridSize">
-      <option value="16">16×16</option>
-      <option value="32" selected>32×32</option>
-      <option value="64">64×64</option>
+    <option value="12">12×12</option>
+    <option value="16">16×16</option>
+    <option value="32" selected>32×32</option>
+    <option value="64">64×64</option>
     </select>
 
-    <button class="button" id="themeToggle">Toggle Theme</button>
+    <!-- Custom size -->
+  <input type="number" id="customGridSize" min="4" max="128" placeholder="Custom size">
+  <button class="button" id="applyCustomSize">Apply</button>
+
+
+  <button class="button" id="themeToggle">Toggle Theme</button>
 
   </div>
 
